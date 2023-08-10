@@ -1,4 +1,5 @@
 # JLWallpapers
+![Bildschirmfoto vom 2023-08-10 22-18-52](https://github.com/iradraconis/JLWallpapersJava/assets/71747937/cbb52ec8-5256-4204-bea5-31474bb41e6c)
 
 Ein Programm zur Bearbeitung und Aktualisierung von Wallpapern für den `j-lawyer-client`.
 
