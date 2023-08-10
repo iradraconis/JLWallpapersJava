@@ -20,7 +20,13 @@ Stellen Sie sicher, dass Sie die richtigen Abhängigkeiten in Ihrer Umgebung ins
 
 ## Verwendung
 
-Führen Sie das Programm aus, um das Hauptfenster anzuzeigen. Folgen Sie dann den Schritten:
+Öffnen Sie ein Terminal im Ordner der Java Datei. Führen Sie das Programm aus, um das Hauptfenster anzuzeigen. 
+
+```
+java JLWallpapers.java
+```
+
+Folgen Sie dann den Schritten:
 
 1. Klicken Sie auf "Wallpaper Ordner auswählen" und wählen Sie den Ordner, der die neuen Wallpapers enthält.
 2. Klicken Sie auf "j-lawyer Client Ordner auswählen" und wählen Sie den Installationsordner von `j-lawyer-client`.
