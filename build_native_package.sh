@@ -18,21 +18,20 @@
 # check if os is windows, linux, mac
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-    echo "Linux"
-    # native package for linux corresponding to the current OS (Debian oder RPM) based.
-    jpackage --input ./target/ --main-jar jL-Wallpapers-0.1.jar --main-class com.iradraconis.jl.wallpapers.JLWallpapers --icon ./src/main/resources/icon.png
+    echo "Build für Linux gestartet..."
+    # native package for linux corresponding to the current OS
+    # RPM Package
+    jpackage --name jL-Wallpapers --linux-package-name jL-Wallpapers --input ./target/ --main-jar jL-Wallpapers-0.1.jar --main-class com.iradraconis.jl.wallpapers.JLWallpapers --icon ./src/main/resources/icon.png --type rpm --resource-dir ./src/main/resources/ --verbose
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-    echo "MacOS"
-    jpackage --input ./target/ --main-jar jL-Wallpapers-0.1.jar  --main-class com.iradraconis.jl.wallpapers.JLWallpapers --icon ./src/main/resources/icon.icns
+    echo "Build für MacOS gestartet..."
+    jpackage --name jL-Wallpapers --input ./target/ --main-jar jL-Wallpapers-0.1.jar --main-class com.iradraconis.jl.wallpapers.JLWallpapers --icon ./src/main/resources/icon.icns
 else
-    echo "Windows"
+    echo "Build für Windows gestartet..."
     # MSI Package
-    jpackage --input ./target/ --main-jar jL-Wallpapers-0.1.jar  --main-class com.iradraconis.jl.wallpapers.JLWallpapers --icon ./src/main/resources/icon.ico --type msi
+    jpackage --name jL-Wallpapers --input ./target/ --main-jar jL-Wallpapers-0.1.jar --main-class com.iradraconis.jl.wallpapers.JLWallpapers --icon ./src/main/resources/icon.ico --type msi
 fi
 
 # Step 4: Install the package
-# Fedora
-# sudo dnf install ./jlsync-1.0-1.x86_64.rpm
 
 # Step 5: Run the application
 
