@@ -79,7 +79,7 @@ public class JLWallpapers {
         frame.add(progressBar);
 
         frame.pack();
-        frame.setSize(280, 230); 
+        frame.setSize(280, 240); 
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
 
